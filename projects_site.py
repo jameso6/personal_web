@@ -156,7 +156,7 @@ def main():
             dmatrix = preprocess_essay(st.session_state.prompt, essay_text)
 
             # Predict score using model
-            prediction = model.predict(dmatrix.toarray()) # ensure datatype is consistent with model
+            prediction = model.predict(dmatrix) # ensure datatype is consistent with model
             st.write(f"Predicted grade: {prediction[0]:.2f}")
         else:
             st.error("Please enter an essay to grade.")
