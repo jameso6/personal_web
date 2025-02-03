@@ -124,8 +124,9 @@ def load_model():
 # Function to preprocess the essay text input and extract features
 def preprocess_essay(question_text, essay_text):
     X = question_text + " " + essay_text
-    features = vectorizer.transform([X])  # Use transform instead of fit_transform
-    return features
+    vectorized_text = vectorizer.transform([X])  # Use transform instead of fit_transform
+    dmatrix = xgb.DMatrix(vectorized_text.toarray())
+    return dmatrix
 
 
 # Main Streamlit app
@@ -152,10 +153,10 @@ def main():
     if st.button("Grade Essay"):
         if essay_text:
             # Preprocess the essay
-            features = preprocess_essay(st.session_state.prompt, essay_text)
+            dmatrix = preprocess_essay(st.session_state.prompt, essay_text)
 
             # Predict score using model
-            prediction = model.predict(features.toarray()) # ensure datatype is consistent with model
+            prediction = model.predict(dmatrix.toarray()) # ensure datatype is consistent with model
             st.write(f"Predicted grade: {prediction[0]:.2f}")
         else:
             st.error("Please enter an essay to grade.")
