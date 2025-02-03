@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 import streamlit as st
 import xgboost as xgb
@@ -92,9 +91,6 @@ st.write("• Extracted and vectorized 1400 IELTS essay responses and questions 
 st.write("• Built a Natural Language Processing XGBoost Regression model to predict essay scores with a mean square error of 0.70.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
 
-
-# Changing directory to current folder
-os.chdir('C://Users//j_chr//OneDrive//Desktop//Projects//essay grader//')
 
 # Uncomment below to download dataset from Kaggle
 # api = KaggleApi()
