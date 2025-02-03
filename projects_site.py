@@ -42,30 +42,30 @@ st.write("• **Libraries**: pandas, NumPy, Matplotlib, Plotly, Seaborn, Sci-kit
 st.header("Employment Experience")
 st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
 st.write('''
-         • Generated a historical database of employee wages and working hours across Alberta by extracting and processing over 2000
-rows of data from 4 open government sources using Statistics Canada’s API, web scraping tools, and GitHub Actions.
+         • Generated a historical database of employee wages and working hours across Alberta by *extracting and processing over 2000
+rows of data* from 4 open government sources using Statistics Canada’s API, web scraping tools, and GitHub Actions.
          ''')
 st.write('''
-         • Employed PowerBI to create 13 dynamic visualizations illustrating the comparative employment wages and working
+         • Employed *PowerBI to create 13 dynamic visualizations* illustrating the comparative employment wages and working
 hours in different Alberta industry sectors and demographics to aid further analyses.
          ''')
 
 st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
 st.write('''
-         • Established a new workflow system for business operations and enabled business success amidst declining resources.
+         • Established a *new workflow system* for business operations and enabled *business success* amidst declining resources.
          ''')
 st.write('''
-         • Liaison between operation and development teams of 20 people and managed the assignment of 30 weekly
-Microsoft DevOps tasks and tickets ensuring customer success.
+         • Liaison between operation and development teams of *20 people and managed the assignment of 30 weekly
+Microsoft DevOps tasks and tickets* ensuring customer success.
          ''')
 st.write('''
-         • Deployed a successful customer relationship management tool in HubSpot to track business development and
-customer journey of over 20 clients.
+         • Deployed a successful customer relationship management tool in *HubSpot to track business development and
+customer journey of over 20 clients*.
          ''')
 
 st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
 st.write('''
-         • Educated and mentored over 50 students across different levels of school and significantly improved academic performance.
+         • Educated and mentored over *50 students* across different levels of school and significantly improved academic performance.
          ''')
 st.write('''
          • Collaborated with management in establishing an online tutoring module to continue business operations during COVID.
