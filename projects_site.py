@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import streamlit as st
 import xgboost as xgb
-from kaggle import KaggleApi
+# from kaggle import KaggleApi
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
@@ -27,14 +27,6 @@ with open(pdf_file_path, "rb") as pdf_file:
 
 # Contact Information
 st.header("Contact Information")
-# col1, col2 = st.columns(2)
-# with col1:
-#     st.write("📍 Location: Calgary, AB")
-# with col2:
-#     st.write("📧 Email: jameschristian.oblea@gmail.com")
-#     st.write("📱 Phone: (403) 919-8706")
-#     st.write("🌐 LinkedIn: ca.linkedin.com/in/james-oblea")
-
 st.write("📍 Location: Calgary, AB")
 st.write("📧 Email: jameschristian.oblea@gmail.com")
 st.write("📱 Phone: (403) 919-8706")
