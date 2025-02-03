@@ -117,7 +117,7 @@ X_train_vectorized = vectorizer.fit_transform(X_train)
 
 # Function to load the model
 def load_model():
-    model = xgb.XGBRegressor()
+    model = xgb.Booster()
     model.load_model('xgb_essay_grader.json')
     return model
 
