@@ -86,7 +86,7 @@ st.write("**Bachelor of Science in Psychology** - University of Calgary (Calgary
 
 # Projects Section
 st.header("Projects")
-st.write("**Automating IELTS Essay Grading**, Python| 2024")
+st.write("**Automating IELTS Essay Grading**, Python | 2024")
 st.write("• Extracted and vectorized 1400 IELTS essay responses and questions in preparation for model training.")
 st.write("• Built a Natural Language Processing XGBoost Regression model to predict essay scores with a mean square error of 0.70.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
@@ -170,7 +170,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-st.write("**Simulating Late-Game Strategies in Basketball**, Python| 2024")
+st.write("**Simulating Late-Game Strategies in Basketball**, Python | 2024")
 st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables..")
 st.write("• Performed a Discrete Event Monte Carlo Simulation of late-game basketball possessions to test three different late-game strategies and determine the best strategy to win basketball games..")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
