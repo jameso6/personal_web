@@ -1,5 +1,4 @@
 pandas
 streamlit
 xgboost
-kaggle
 scikit-learn
