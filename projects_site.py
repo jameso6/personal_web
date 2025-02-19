@@ -1,7 +1,7 @@
-import base64
 import pandas as pd
 import streamlit as st
 import xgboost as xgb
+from PIL import Image
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
@@ -176,17 +176,16 @@ st.write("• Developed an interactive dashboard comprising of 6 visualizations 
 st.write("• Integrated multiple sources of data from Open Calgary into a database of over 50000 rows.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
 
-# PDF will be displayed here
-def display_pdf(pdf_file):
-    with open(pdf_file, "rb") as f:
-        pdf_data = f.read()
-        pdf_base64 = base64.b64encode(pdf_data).decode("utf-8")
-    return pdf_base64
+# Images of dashboard since cannot connect Power BI without paid license
+image_path_1 = "spatial.png"
+image_path_2 = "temporal.png"
 
-crimeproj_pdf_path = "crimestats.pdf"
-pdf_base64 = display_pdf(crimeproj_pdf_path)
-pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600px" type="application/pdf"></iframe>'
-st.markdown(pdf_display, unsafe_allow_html=True)
+image_1 = Image.open(image_path_1)
+image_2 = Image.open(image_path_2)
+    
+
+st.image(image_1, caption="Uploaded Image", use_column_width=True)
+st.image(image_2, caption="Uploaded Image", use_column_width=True)
 
 st.write("**Simulating Late-Game Strategies in Basketball**, Python | 2024")
 st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables.")
