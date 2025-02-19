@@ -184,7 +184,7 @@ def display_pdf(pdf_file):
     return pdf_base64
 
 crimeproj_pdf_path = "crimestats.pdf"
-display_pdf(crimeproj_pdf_path)
+pdf_base64 = display_pdf(crimeproj_pdf_path)
 pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600px" type="application/pdf"></iframe>'
 st.markdown(pdf_display, unsafe_allow_html=True)
 
