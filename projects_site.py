@@ -184,8 +184,8 @@ image_1 = Image.open(image_path_1)
 image_2 = Image.open(image_path_2)
     
 
-st.image(image_1, caption="Uploaded Image", use_container_width =True)
-st.image(image_2, caption="Uploaded Image", use_container_width =True)
+st.image(image_1, use_container_width =True)
+st.image(image_2, caption="Screen Captures of the dashboard in Power BI", use_container_width =True)
 
 st.write("**Simulating Late-Game Strategies in Basketball**, Python | 2024")
 st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables.")
