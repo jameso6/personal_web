@@ -1,3 +1,4 @@
+import base64
 import pandas as pd
 import streamlit as st
 import xgboost as xgb
@@ -170,9 +171,26 @@ def main():
 if __name__ == "__main__":
     main()
 
+st.write("**Calgary Crime Statistics Dashboard**, Power BI | 2024")
+st.write("• Developed an interactive dashboard comprising of 6 visualizations to monitor year-over-year crime statistics across Calgary communities.")
+st.write("• Integrated multiple sources of data from Open Calgary into a database of over 50000 rows.")
+st.write("[https://github.com/jameso6/personal_web.git](#)")
+
+# PDF will be displayed here
+def display_pdf(pdf_file):
+    with open(pdf_file, "rb") as f:
+        pdf_data = f.read()
+        pdf_base64 = base64.b64encode(pdf_data).decode("utf-8") # Not sure why - look into it later
+        
+    pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600px" type="application/pdf"></iframe>'
+    st.markdown(pdf_display, unsafe_allow_html=True)
+
+crimeproj_pdf_path = "crimestats.pdf"
+display_pdf(crimeproj_pdf_path)
+
 st.write("**Simulating Late-Game Strategies in Basketball**, Python | 2024")
-st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables..")
-st.write("• Performed a Discrete Event Monte Carlo Simulation of late-game basketball possessions to test three different late-game strategies and determine the best strategy to win basketball games..")
+st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables.")
+st.write("• Performed a Discrete Event Monte Carlo Simulation of late-game basketball possessions to test three different late-game strategies and determine the best strategy to win basketball games.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
 
 # Footer Section
