@@ -180,13 +180,13 @@ st.write("[https://github.com/jameso6/personal_web.git](#)")
 def display_pdf(pdf_file):
     with open(pdf_file, "rb") as f:
         pdf_data = f.read()
-        pdf_base64 = base64.b64encode(pdf_data).decode("utf-8") # Not sure why - look into it later
-        
-    pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600px" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+        pdf_base64 = base64.b64encode(pdf_data).decode("utf-8")
+    return return pdf_base64
 
 crimeproj_pdf_path = "crimestats.pdf"
 display_pdf(crimeproj_pdf_path)
+pdf_display = f'<iframe src="data:application/pdf;base64,{pdf_base64}" width="100%" height="600px" type="application/pdf"></iframe>'
+st.markdown(pdf_display, unsafe_allow_html=True)
 
 st.write("**Simulating Late-Game Strategies in Basketball**, Python | 2024")
 st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables.")
