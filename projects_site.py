@@ -181,7 +181,7 @@ def display_pdf(pdf_file):
     with open(pdf_file, "rb") as f:
         pdf_data = f.read()
         pdf_base64 = base64.b64encode(pdf_data).decode("utf-8")
-    return return pdf_base64
+    return pdf_base64
 
 crimeproj_pdf_path = "crimestats.pdf"
 display_pdf(crimeproj_pdf_path)
