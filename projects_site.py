@@ -18,14 +18,11 @@ with col1:
     st.subheader("Data Analyst")
     
 with col2:
-    st.markdown(
-    f'''
-    <div style="width: 200px; height: 200px; border-radius: 50%;">
-        <img src="{'ACHRI.jpg'}" style="width: 100%; height: 100%;">
+    st.markdown(f'''
+    <div style="display: flex; justify-content: center;">
+        <img src="{'ACHRI.jpg'}" style="border-radius: 20px; width: 300px;" />
     </div>
-    ''',
-    unsafe_allow_html=True,
-    )
+    ''', unsafe_allow_html=True)
 
 # Provide a download button for the PDF
 pdf_file_path = "JamesOblea_Resume.pdf"
