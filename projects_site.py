@@ -14,7 +14,7 @@ st.title("James Oblea")
 st.subheader("Data Analyst")
 
 # Provide a download button for the PDF
-pdf_file_path = "JamesOblea_Resume_2025.pdf"
+pdf_file_path = "JamesOblea_Resume.pdf"
 
 with open(pdf_file_path, "rb") as pdf_file:
     st.download_button(
@@ -42,10 +42,12 @@ st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 # Experience Section
 st.header("Employment Experience")
 st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
-st.write('''    • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
+st.write('''
+        • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
 enabling current and future analysts and stakeholders to have greater access to relevant data.
          ''')
-st.write('''    • **Developed and presented 13 dynamic and interactive visualizations**, 
+st.write('''
+        • **Developed and presented 13 dynamic and interactive visualizations**, 
 illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
          ''')
 
@@ -95,8 +97,8 @@ st.write("• **Developed geospatial visualizations to pinpoint areas with low c
 st.write("• **Mapped referral pathways through interactive dashboards**, highlighting inefficiencies in connecting callers to appropriate services and informing strategies to improve service delivery outcomes.")
 
 st.write("**Calgary Crime Statistics Dashboard**, Power BI | November 2024")
-st.write("    • **Designed and implemented an interactive dashboard with 6 dynamic visualizations**, enabling key decision makers to track and analyze year-over-year crime statistics across Calgary’s communities.")
-st.write("    • **Consolidated and integrated diverse datasets from Open Calgary**, creating a centralized database of over 50,000 rows to streamline access to crime-related insights.")
+st.write("• **Designed and implemented an interactive dashboard with 6 dynamic visualizations**, enabling key decision makers to track and analyze year-over-year crime statistics across Calgary’s communities.")
+st.write("• **Consolidated and integrated diverse datasets from Open Calgary**, creating a centralized database of over 50,000 rows to streamline access to crime-related insights.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
 
 # Images of dashboard since cannot connect Power BI without paid license
