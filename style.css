@@ -1,27 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+}
 
-* {font-family: 'Readex Pro';}
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+}
 
+/* Title styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2b3e50;
+}
 
+/* Section headers */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2b3e50;
+    padding-bottom: 5px;
+    color: #2b3e50;
+}
+
+/* Section body text */
+p, ul {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Column Layout */
+.stColumns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stColumn {
+    width: 48%;
+}
+
+/* Link Styling */
 a {
+    color: #007bff;
     text-decoration: none;
-    color: white !important;
-    font-weight: 500;
 }
 
 a:hover {
-    color: #d33682 !important;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-ul {list-style-type: none;}
-
-hr {
-    margin-top: 0px;
-    margin-bottom: 5%;
+/* Contact Section Styling */
+.stContact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
+.stContact div {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.stContact div:last-child {
+    width: 48%;
+}
+
+/* Skills Section */
+.stSkills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stSkills span {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stColumns {
+        flex-direction: column;
+    }
+
+    .stContact div {
+        width: 100%;
+    }
+}
