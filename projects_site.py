@@ -30,7 +30,7 @@ with col2:
         return img
         
     profile_pic = Image.open('ACHRI.png')
-    proilfe_pic = added_rounded_corners(profile_pic, 30)
+    proilfe_pic = add_rounded_corners(profile_pic, 30)
     st.image(profile_pic)
 
 # Provide a download button for the PDF
