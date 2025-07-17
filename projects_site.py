@@ -29,7 +29,7 @@ with col2:
         img.putalpha(mask)
         return img
         
-    profile_pic = Image.open('ACHRI.jpg')
+    profile_pic = Image.open('ACHRI.png')
     proilfe_pic = added_rounded_corners(profile_pic, 30)
     st.image(profile_pic)
 
