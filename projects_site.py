@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import xgboost as xgb
-from PIL import Image, ImageDraw
+from PIL import Image
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
@@ -18,20 +18,12 @@ with col1:
     st.subheader("Data Analyst")
     
 with col2:
-    def add_rounded_corners(img, radius):
-        # Create rounded mask
-        mask = Image.new("L", img.size, 0)
-        draw = ImageDraw.Draw(mask)
-        draw.rounded_rectangle([0, 0, *img.size], radius=radius, fill=255)
-    
-        # Apply mask to image
-        img = img.convert("RGBA")
-        img.putalpha(mask)
-        return img
-        
-    profile_pic = Image.open('ACHRI.png')
-    proilfe_pic = add_rounded_corners(profile_pic, 80)
-    st.image(profile_pic)
+    profile_path = 'ACHRI.png'
+    st.markdown(f'''
+    <div style="display: flex; justify-content: center;">
+        <img src="{profile_path}" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;" />
+    </div>
+''', unsafe_allow_html=True)
 
 # Provide a download button for the PDF
 pdf_file_path = "JamesOblea_Resume.pdf"
