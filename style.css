@@ -115,3 +115,32 @@ footer {
         width: 100%;
     }
 }
+
+
+/* Style the tabs container */
+div[data-baseweb="tab-list"] {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Style individual tabs */
+button[role="tab"] {
+    background-color: #f4f7fa;
+    color: #333;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Style selected tab */
+button[aria-selected="true"] {
+    background-color: #81c784;
+    color: white;
+}
+
+/* Optional: hover effect */
+button[role="tab"]:hover {
+    background-color: #a5d6a7;
+}
