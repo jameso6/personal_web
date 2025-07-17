@@ -40,42 +40,9 @@ with col1:
 with col2:
     st.write("🌐 ca.linkedin.com/in/james-oblea")
 
-st.markdown("""
-    <style>
-    /* Style the tabs container */
-    div[data-baseweb="tab-list"] {
-        background-color: #e8f5e9;
-        border-radius: 8px;
-        padding: 5px;
-    }
+tab1, tab2, tab3, tab4 = st.tabs(['Highlights of Qualification', 'Employment Experience', 'Education', 'Projects'])
 
-    /* Style individual tabs */
-    button[role="tab"] {
-        background-color: #c8e6c9;
-        color: #2e7d32;
-        border: none;
-        padding: 10px;
-        margin-right: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-
-    /* Style selected tab */
-    button[aria-selected="true"] {
-        background-color: #81c784;
-        color: white;
-    }
-
-    /* Optional: hover effect */
-    button[role="tab"]:hover {
-        background-color: #a5d6a7;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-tab1, tab2, tab3, tab4 = st.tabs(['Employment Experience', 'Education', 'Projects', 'Highlights of Qualification'])
-
-with tab4:
+with tab1:
     # Summary Section
     st.header("Highlights of Qualification")
     st.write("• **Master’s graduate with 1+ years of experience in data visualization**, driving business decisions by extracting actionable insights and optimizing key performance indications (KPIs).")
@@ -86,7 +53,7 @@ with tab4:
 
 
 
-with tab1:
+with tab2:
     # Experience Section
     st.header("Employment Experience")
     st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
@@ -123,7 +90,7 @@ with tab1:
     supporting business operations during COVID.
              ''')
 
-with tab2:
+with tab3:
     # Education Section
     st.header("Education")
     st.write("**Master of Data Science and Analytics** - University of Calgary (Calgary, AB) | 2024")
@@ -136,7 +103,7 @@ with tab2:
 # skills = ["Python", "R", "SQL(Postgres, MySQL, MSSQL)", "Machine Learning", "Power BI", "Tableau","Project Management", "JavaScript", "HTML/CSS",]
 # st.write(", ".join(skills))
 
-with tab3:
+with tab4:
     # Projects Section
     st.header("Projects")
     
