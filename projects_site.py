@@ -33,11 +33,11 @@ st.write("🌐 LinkedIn: ca.linkedin.com/in/james-oblea")
 
 # Summary Section
 st.header("Highlights of Qualification")
-st.write("• **Master’s graduate** with over 1+ year of experience in visualizing company KPIs and directing business decisions using data.")
-st.write("• Experienced in building machine learning models to facilitate academic research – one of which was presented in the Alberta Children’s Hospital Research Institute research symposium.")
-st.write("• **Languages & Frameworks**: Python, R, SQL (Postgres, MySQL, MSSQL), Java, JavaScript, HTML/CSS, Node.js, Streamlit, Flask")
-st.write("• **Analysis Tools**: PowerBI, Tableau")
-st.write("• **Libraries**: pandas, NumPy, Matplotlib, Plotly, Seaborn, Sci-kit learn, Tensor Flow, Keras, PyTorch")
+st.write("• **Master’s graduate with 1+ years of experience in data visualization**, driving business decisions by extracting actionable insights and optimizing key performance indications (KPIs).")
+st.write("• **Experienced in building machine learning models to facilitate academic research** – one of which was presented in the Alberta Children’s Hospital Research Institute (ACHRI) research symposium.")
+st.write("• **Languages & Frameworks**: Python, R, SQL, JavaScript, HTML/CSS, Streamlit")
+st.write("• **Database Management Tools**: PostgreSQL, Microsoft SQL, MongoDB, Oracle Database, AWS RDS, Databricks")
+st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 
 # Experience Section
 st.header("Employment Experience")
