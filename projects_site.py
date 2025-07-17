@@ -41,6 +41,9 @@ with col2:
     st.write("🌐 ca.linkedin.com/in/james-oblea")
     
 st.markdown("[Highlights of Qualification](#section-1)")
+st.markdown("[Employment Experience](#section-2)")
+st.markdown("[Education](#section-1)")
+st.markdown("[Projects](#section-3)")
 
 # Summary Section
 st.header("Highlights of Qualification")
