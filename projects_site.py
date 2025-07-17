@@ -10,7 +10,36 @@ st.set_page_config(page_title="James Oblea Resume")
 with open('style.css') as f:
     css = f.read()
 
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    /* Make headers bold and colored */
+    h1, h2, h3, h4 {
+        color: #4CAF50;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: bold;
+    }
+
+    /* Style body text */
+    .stMarkdown {
+        font-size: 18px;
+        color: #333333;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Style Streamlit sidebar */
+    .css-1d391kg {
+        background-color: #f0f0f0;
+    }
+
+    /* Change background color */
+    .stApp {
+        background-color: #f7f7f7;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("James Oblea")
 st.subheader("Data Analyst")
