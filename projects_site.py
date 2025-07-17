@@ -11,18 +11,6 @@ with open('style.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
-st.markdown("""
-<style>
-ul {
-    padding-left: 20px;
-}
-ul ul {
-    padding-left: 20px;
-    list-style-type: circle;
-}
-</style>
-""", unsafe_allow_html=True)
-
 
 st.title("James Oblea")
 st.subheader("Data Analyst")
