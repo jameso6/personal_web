@@ -12,8 +12,20 @@ with open('style.css') as f:
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-st.title("James Oblea")
-st.subheader("Data Analyst")
+col1, col2 = st.columns(2, gap = 'small')
+with col1:
+    st.title("James Oblea")
+    st.subheader("Data Analyst")
+    
+with col2:
+    st.markdown(
+    f'''
+    <div style="width: 200px; height: 200px; overflow: hidden; border-radius: 50%;">
+        <img src="{ACHRI.jpg}" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    ''',
+    unsafe_allow_html=True,
+    )
 
 # Provide a download button for the PDF
 pdf_file_path = "JamesOblea_Resume.pdf"
