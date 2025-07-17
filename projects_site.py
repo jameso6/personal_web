@@ -63,7 +63,7 @@ col1, col2 = st.columns(2, gap = 'small')
 with col1:
     st.write("📱 (403) 919-8706")
 with col2:
-    st.write("🌐 ca.linkedin.com/in/james-oblea")
+    st.link_button("🌐 ca.linkedin.com/in/james-oblea", 'ca.linkedin.com/in/james-oblea')
 
 # Summary Section
 st.header("Highlights of Qualification")
