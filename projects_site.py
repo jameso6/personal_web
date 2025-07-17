@@ -48,6 +48,7 @@ st.write("• **Languages & Frameworks**: Python, R, SQL, JavaScript, HTML/CSS, 
 st.write("• **Database Management Tools**: PostgreSQL, Microsoft SQL, MongoDB, Oracle Database, AWS RDS, Databricks")
 st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 
+st.write('---')
 st.write('Learn more about my **experience**, **education**, and **projects**:')
 
 tab1, tab2, tab3 = st.tabs(['Experience', 'Education', 'Projects'])
