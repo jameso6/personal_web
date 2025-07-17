@@ -136,11 +136,11 @@ button[role="tab"] {
 
 /* Style selected tab */
 button[aria-selected="true"] {
-    background-color: #81c784;
+    background-color: #9bc99d;
     color: white;
 }
 
 /* Optional: hover effect */
 button[role="tab"]:hover {
-    background-color: #a5d6a7;
+    background-color: #9bc99d;
 }
