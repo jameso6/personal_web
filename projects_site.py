@@ -51,16 +51,12 @@ st.write('''
 illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
          ''')
 
-st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
-st.write('''
+st.markdown('''
+    **Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023
          • **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
 enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
-         ''')
-st.write('''
          • **Liaison between operation and development teams of 20 people**, 
 managing the assignment of 30 weekly tasks and tickets ensuring customer success.
-         ''')
-st.write('''
          • **Developed an internal tool to optimize the processing of PDFs and trained new recruits**, 
 enhancing the efficiency and accuracy of work performed by business operations.
          ''')
@@ -196,8 +192,8 @@ if __name__ == "__main__":
     main()
 
 st.write("**Simulating Late-Game Strategies in Basketball**, Python | April 2024")
-st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables.")
-st.write("• Performed a Discrete Event Monte Carlo Simulation of late-game basketball possessions to test three different late-game strategies and determine the best strategy to win basketball games.")
+st.write("• **Extracted NBA play-by-play data from over 7,000 games using Basketball Reference’s API**, preparing a comprehensive dataset for basketball strategy analyses and fitting probability distributions for simulation.")
+st.write("• **Performed a Discrete Event Monte Carlo Simulation of late-game basketball possessions**, testing 3 different late-game strategies for prospective coaches to determine the best strategies to win basketball games. ")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
 
 # Footer Section
