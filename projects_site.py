@@ -29,14 +29,15 @@ with open(pdf_file_path, "rb") as pdf_file:
 
 # Contact Information
 st.header("Contact Information")
-col1, col2, col3, col4 = st.columns(4, gap = 'small')
+col1, col2 = st.columns(2, gap = 'small')
 with col1:
     st.write("📍 Calgary, AB")
 with col2:
     st.write("📧 jameschristian.oblea@gmail.com")
-with col3:
+col1, col2 = st.columns(2, gap = 'small')
+with col1:
     st.write("📱 (403) 919-8706")
-with col4:
+with col2:
     st.write("🌐 ca.linkedin.com/in/james-oblea")
 
 # Summary Section
