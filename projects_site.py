@@ -40,7 +40,7 @@ with col1:
 with col2:
     st.write("🌐 ca.linkedin.com/in/james-oblea")
 
-tab1, tab2, tab3, tab4 = st.tabs(['Highlights of Qualification', 'Employment Experience', 'Education', 'Projects'])
+tab1, tab2, tab3, tab4 = st.tabs(['Highlights of Qualification', 'Employment Experience', 'Education', 'Projects'], width = 'stretch')
 
 with tab1:
     # Summary Section
