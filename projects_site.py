@@ -52,7 +52,7 @@ illustrating the comparative employment wages and working hours in different Alb
          ''')
 
 st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
-str.markdown('''
+st.markdown('''
         • **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
 enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
             ''')
