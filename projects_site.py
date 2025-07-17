@@ -16,6 +16,17 @@ col1, col2 = st.columns(2, gap = 'small')
 with col1:
     st.title("James Oblea")
     st.subheader("Data Analyst")
+    # Provide a download button for the PDF
+    pdf_file_path = "JamesOblea_Resume.pdf"
+    
+    with open(pdf_file_path, "rb") as pdf_file:
+        st.download_button(
+            label="Download My Resume",
+            data=pdf_file,
+            file_name="JamesOblea_Resume_2025.pdf",
+            mime="application/pdf"
+        )
+
     
 with col2:
     profile_path = 'ACHRI.png'
@@ -39,17 +50,6 @@ with col2:
     profile = Image.open(profile_path)
     profile_circ = make_circle(profile)
     st.image(profile_circ)
-
-# Provide a download button for the PDF
-pdf_file_path = "JamesOblea_Resume.pdf"
-
-with open(pdf_file_path, "rb") as pdf_file:
-    st.download_button(
-        label="Download My Resume",
-        data=pdf_file,
-        file_name="JamesOblea_Resume_2025.pdf",
-        mime="application/pdf"
-    )
 
 
 # Contact Information
