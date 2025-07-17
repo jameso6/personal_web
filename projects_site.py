@@ -24,6 +24,18 @@ with open(pdf_file_path, "rb") as pdf_file:
         mime="application/pdf"
     )
 
+st.markdown("""
+<style>
+ul {
+    padding-left: 20px;
+}
+ul ul {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Contact Information
 st.header("Contact Information")
 st.write("📍 Location: Calgary, AB")
@@ -41,13 +53,11 @@ st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 
 # Experience Section
 st.header("Employment Experience")
-st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
 st.write('''
+**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024
         • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
 enabling current and future analysts and stakeholders to have greater access to relevant data.
-         ''')
-st.write('''
-        • **Developed and presented 13 dynamic and interactive visualizations**, 
+    • **Developed and presented 13 dynamic and interactive visualizations**, 
 illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
          ''')
 
