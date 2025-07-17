@@ -43,33 +43,36 @@ st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 st.header("Employment Experience")
 st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
 st.write('''
-         • Generated a historical database of employee wages and working hours across Alberta by **extracting and processing over 2000
-rows of data** from 4 open government sources using Statistics Canada’s API, web scraping tools, and GitHub Actions.
+         • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
+enabling current and future analysts and stakeholders to have greater access to relevant data.
          ''')
 st.write('''
-         • Employed **PowerBI to create 13 dynamic visualizations** illustrating the comparative employment wages and working
-hours in different Alberta industry sectors and demographics to aid further analyses.
+         • **Developed and presented 13 dynamic and interactive visualizations**, 
+illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
          ''')
 
 st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
 st.write('''
-         • Established a **new workflow system** for business operations and enabled **business success** amidst declining resources.
+         • **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
+enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
          ''')
 st.write('''
-         • Liaison between operation and development teams of **20 people and managed the assignment of 30 weekly
-Microsoft DevOps tasks and tickets** ensuring customer success.
+         • **Liaison between operation and development teams of 20 people**, 
+managing the assignment of 30 weekly tasks and tickets ensuring customer success.
          ''')
 st.write('''
-         • Deployed a successful customer relationship management tool in **HubSpot to track business development and
-customer journey of over 20 clients**.
+         • **Developed an internal tool to optimize the processing of PDFs and trained new recruits**, 
+enhancing the efficiency and accuracy of work performed by business operations.
          ''')
 
 st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
 st.write('''
-         • **Educated and mentored over 50 students** across different levels of school and significantly improved academic performance.
+         • **Educated and mentored over 50 students across different levels of school**, 
+significantly improving academic performance.
          ''')
 st.write('''
-         • Collaborated with management in establishing an online tutoring module to continue business operations during COVID.
+         • **Collaborated with management in establishing an online tutoring module**, 
+supporting business operations during COVID.
          ''')
 
 
@@ -87,7 +90,28 @@ st.write("**Bachelor of Science in Psychology** - University of Calgary (Calgary
 
 # Projects Section
 st.header("Projects")
-st.write("**Automating IELTS Essay Grading**, Python | 2024")
+
+st.write("**Converge - Data for Good Datathon**, PowerBI & Python | March 2025")
+st.write("• **Analyzed Calgary call records data to identify 3 key predictors of failed referral conversion**, highlighting the gaps in mental health service across underserved populations.")
+st.write("• **Developed geospatial visualizations to pinpoint areas with low connection rates to appropriate services**, providing actionable insights for targeted outreach and resource allocations.")
+st.write("• **Mapped referral pathways through interactive dashboards**, highlighting inefficiencies in connecting callers to appropriate services and informing strategies to improve service delivery outcomes.")
+
+st.write("**Calgary Crime Statistics Dashboard**, Power BI | November 2024")
+st.write("• Developed an interactive dashboard comprising of 6 visualizations to monitor year-over-year crime statistics across Calgary communities.")
+st.write("• Integrated multiple sources of data from Open Calgary into a database of over 50000 rows.")
+st.write("[https://github.com/jameso6/personal_web.git](#)")
+
+# Images of dashboard since cannot connect Power BI without paid license
+image_path_1 = "spatial.png"
+image_path_2 = "temporal.png"
+
+image_1 = Image.open(image_path_1)
+image_2 = Image.open(image_path_2)
+    
+st.image(image_1, use_container_width =True)
+st.image(image_2, caption="Screen captures of the dashboard in Power BI", use_container_width =True)
+
+st.write("**Automating IELTS Essay Grading**, Python | September 2024")
 st.write("• Extracted and vectorized 1400 IELTS essay responses and questions in preparation for model training.")
 st.write("• Built a Natural Language Processing XGBoost Regression model to predict essay scores with a mean square error of 0.70.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
@@ -171,23 +195,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-st.write("**Calgary Crime Statistics Dashboard**, Power BI | 2024")
-st.write("• Developed an interactive dashboard comprising of 6 visualizations to monitor year-over-year crime statistics across Calgary communities.")
-st.write("• Integrated multiple sources of data from Open Calgary into a database of over 50000 rows.")
-st.write("[https://github.com/jameso6/personal_web.git](#)")
-
-# Images of dashboard since cannot connect Power BI without paid license
-image_path_1 = "spatial.png"
-image_path_2 = "temporal.png"
-
-image_1 = Image.open(image_path_1)
-image_2 = Image.open(image_path_2)
-    
-
-st.image(image_1, use_container_width =True)
-st.image(image_2, caption="Screen captures of the dashboard in Power BI", use_container_width =True)
-
-st.write("**Simulating Late-Game Strategies in Basketball**, Python | 2024")
+st.write("**Simulating Late-Game Strategies in Basketball**, Python | April 2024")
 st.write("• Extracted NBA play-by-play data from over 7000 games using Basketball Reference’s API to fit probability distributions of random variables.")
 st.write("• Performed a Discrete Event Monte Carlo Simulation of late-game basketball possessions to test three different late-game strategies and determine the best strategy to win basketball games.")
 st.write("[https://github.com/jameso6/personal_web.git](#)")
