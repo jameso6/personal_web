@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import xgboost as xgb
-from PIL import Image
+from PIL import Image, ImageDraw
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
@@ -19,11 +19,26 @@ with col1:
     
 with col2:
     profile_path = 'ACHRI.png'
-    st.markdown(f'''
-    <div style="display: flex; justify-content: center;">
-        <img src="{profile_path}" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;" />
-    </div>
-''', unsafe_allow_html=True)
+    def make_circle(img):
+        # Ensure image is square (crop to center)
+        min_side = min(img.size)
+        left = (img.width - min_side) // 2
+        top = (img.height - min_side) // 2
+        img = img.crop((left, top, left + min_side, top + min_side))
+
+        # Create circular mask
+        mask = Image.new("L", img.size, 0)
+        draw = ImageDraw.Draw(mask)
+        draw.ellipse((0, 0, img.size[0], img.size[1]), fill=255)
+
+        # Apply mask
+        img = img.convert("RGBA")
+        img.putalpha(mask)
+        return img
+
+    profile = Image.open(profile_path)
+    profile_circ = make_circle(profile)
+    st.image(profile_circ)
 
 # Provide a download button for the PDF
 pdf_file_path = "JamesOblea_Resume.pdf"
