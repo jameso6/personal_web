@@ -55,11 +55,11 @@ st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 st.header("Employment Experience")
 st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
 st.write('''
-        • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
+        •     **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
 enabling current and future analysts and stakeholders to have greater access to relevant data.
         ''')
 st.write('''
-       • **Developed and presented 13 dynamic and interactive visualizations**, 
+       - **Developed and presented 13 dynamic and interactive visualizations**, 
 illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
         ''')
 
