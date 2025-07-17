@@ -48,14 +48,14 @@ st.write("• **Languages & Frameworks**: Python, R, SQL, JavaScript, HTML/CSS, 
 st.write("• **Database Management Tools**: PostgreSQL, Microsoft SQL, MongoDB, Oracle Database, AWS RDS, Databricks")
 st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 
-st.subheader('Learn more about my **experience**, **education**, and **projects**:')
+st.write('Learn more about my **experience**, **education**, and **projects**:')
 
 tab1, tab2, tab3 = st.tabs(['Experience', 'Education', 'Projects'])
 
 with tab1:
     # Experience Section
     st.header("Employment Experience")
-    st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
+    st.write("**Data Analyst Intern - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
     st.write('''
             - **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
     enabling current and future analysts and stakeholders to have greater access to relevant data.
@@ -65,7 +65,7 @@ with tab1:
     illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
             ''')
     
-    st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
+    st.write("**Business Analyst - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
     st.write('''
             - **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
     enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
@@ -79,7 +79,7 @@ with tab1:
     enhancing the efficiency and accuracy of work performed by business operations.
              ''')
     
-    st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
+    st.write("**Math Tutor - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
     st.write('''
             - **Educated and mentored over 50 students across different levels of school**, 
     significantly improving academic performance.
