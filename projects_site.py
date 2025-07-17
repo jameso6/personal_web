@@ -43,28 +43,34 @@ st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 st.header("Employment Experience")
 st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
 st.write('''
-         • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
+        • **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
 enabling current and future analysts and stakeholders to have greater access to relevant data.
          ''')
 st.write('''
-         • **Developed and presented 13 dynamic and interactive visualizations**, 
+        • **Developed and presented 13 dynamic and interactive visualizations**, 
 illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
          ''')
 
+st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
+str.markdown('''
+        • **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
+enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
+            ''')
+st.markdown('''
+        • **Liaison between operation and development teams of 20 people**,
+managing the assignment of 30 weekly tasks and tickets ensuring customer success.
+            ''')
+st.markdown('''
+        • **Developed an internal tool to optimize the processing of PDFs and trained new recruits**,
+enhancing the efficiency and accuracy of work performed by business operations.
+         ''')
 st.markdown('''
 <style>
 [data-testid="stMarkdownContainer"] ul{
-    padding-left:40px;
+    list-style-position: inside;
 }
 </style>
-    **Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023
-         • **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
-enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
-         • **Liaison between operation and development teams of 20 people**, 
-managing the assignment of 30 weekly tasks and tickets ensuring customer success.
-         • **Developed an internal tool to optimize the processing of PDFs and trained new recruits**, 
-enhancing the efficiency and accuracy of work performed by business operations.
-         ''')
+''', unsafe_allow_html=True)
 
 st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
 st.write('''
