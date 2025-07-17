@@ -39,11 +39,6 @@ with col1:
     st.write("📱 (403) 919-8706")
 with col2:
     st.write("🌐 ca.linkedin.com/in/james-oblea")
-    
-st.markdown("[Highlights of Qualification](#section-1)")
-st.markdown("[Employment Experience](#section-2)")
-st.markdown("[Education](#section-1)")
-st.markdown("[Projects](#section-3)")
 
 # Summary Section
 st.header("Highlights of Qualification")
@@ -53,47 +48,50 @@ st.write("• **Languages & Frameworks**: Python, R, SQL, JavaScript, HTML/CSS, 
 st.write("• **Database Management Tools**: PostgreSQL, Microsoft SQL, MongoDB, Oracle Database, AWS RDS, Databricks")
 st.write("• **Business Intelligence Tools**: PowerBI, Tableau")
 
-# Experience Section
-st.header("Employment Experience")
-st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
-st.write('''
-        - **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
-enabling current and future analysts and stakeholders to have greater access to relevant data.
-        ''')
-st.write('''
-       - **Developed and presented 13 dynamic and interactive visualizations**, 
-illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
-        ''')
+section = st.sidebar.radio('Jump to:', ['Employment Experience', 'Education', 'Projects'])
 
-st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
-st.write('''
-        - **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
-enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
+if section == 'Employment Experience':
+    # Experience Section
+    st.header("Employment Experience")
+    st.write("**Data Analyst Intern, - TOSSA Sustainability (Calgary, AB)** | May 2024 – August 2024")
+    st.write('''
+            - **Consolidated over 2000 rows of employment data across 4 different open government resources and automated future data collection process**, 
+    enabling current and future analysts and stakeholders to have greater access to relevant data.
             ''')
-st.write('''
-        - **Liaison between operation and development teams of 20 people**,
-managing the assignment of 30 weekly tasks and tickets ensuring customer success.
+    st.write('''
+           - **Developed and presented 13 dynamic and interactive visualizations**, 
+    illustrating the comparative employment wages and working hours in different Alberta industry sectors and demographics.
             ''')
-st.write('''
-        - **Developed an internal tool to optimize the processing of PDFs and trained new recruits**,
-enhancing the efficiency and accuracy of work performed by business operations.
-         ''')
-
-st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
-st.write('''
-        - **Educated and mentored over 50 students across different levels of school**, 
-significantly improving academic performance.
-         ''')
-st.write('''
-        - **Collaborated with management in establishing an online tutoring module**, 
-supporting business operations during COVID.
-         ''')
-
-# Education Section
-st.header("Education")
-st.write("**Master of Data Science and Analytics** - University of Calgary (Calgary, AB) | 2024")
-st.write("**Bachelor of Science in Mathematics and Statistics** - University of Calgary (Calgary, AB) | 2020")
-st.write("**Bachelor of Science in Psychology** - University of Calgary (Calgary, AB) | 2020")
+    
+    st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
+    st.write('''
+            - **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
+    enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
+                ''')
+    st.write('''
+            - **Liaison between operation and development teams of 20 people**,
+    managing the assignment of 30 weekly tasks and tickets ensuring customer success.
+                ''')
+    st.write('''
+            - **Developed an internal tool to optimize the processing of PDFs and trained new recruits**,
+    enhancing the efficiency and accuracy of work performed by business operations.
+             ''')
+    
+    st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
+    st.write('''
+            - **Educated and mentored over 50 students across different levels of school**, 
+    significantly improving academic performance.
+             ''')
+    st.write('''
+            - **Collaborated with management in establishing an online tutoring module**, 
+    supporting business operations during COVID.
+             ''')
+elif section == 'Education':
+    # Education Section
+    st.header("Education")
+    st.write("**Master of Data Science and Analytics** - University of Calgary (Calgary, AB) | 2024")
+    st.write("**Bachelor of Science in Mathematics and Statistics** - University of Calgary (Calgary, AB) | 2020")
+    st.write("**Bachelor of Science in Psychology** - University of Calgary (Calgary, AB) | 2020")
 
 
 # # Skills Section
