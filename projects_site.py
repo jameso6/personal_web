@@ -20,8 +20,8 @@ with col1:
 with col2:
     st.markdown(
     f'''
-    <div style="width: 200px; height: 200px; overflow: hidden; border-radius: 50%;">
-        <img src="{'ACHRI.jpg'}" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="width: 200px; height: 200px; border-radius: 50%;">
+        <img src="{'ACHRI.jpg'}" style="width: 100%; height: 100%;">
     </div>
     ''',
     unsafe_allow_html=True,
