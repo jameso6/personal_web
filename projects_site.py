@@ -101,7 +101,7 @@ with tab2:
 # skills = ["Python", "R", "SQL(Postgres, MySQL, MSSQL)", "Machine Learning", "Power BI", "Tableau","Project Management", "JavaScript", "HTML/CSS",]
 # st.write(", ".join(skills))
 
-with tab 3:
+with tab3:
     # Projects Section
     st.header("Projects")
     
