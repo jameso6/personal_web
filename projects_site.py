@@ -52,35 +52,28 @@ illustrating the comparative employment wages and working hours in different Alb
          ''')
 
 st.write("**Business Analyst, - VantEdge Logistics Inc. (Calgary, AB)** | June 2022 – June 2023")
-st.markdown('''
+st.write('''
         • **Established a new workflow system for business operations along with the deployment of a new customer relations management system**, 
 enabling stakeholders to monitor business success across 20 different clients and target resources on key ventures.
             ''')
-st.markdown('''
+st.write('''
         • **Liaison between operation and development teams of 20 people**,
 managing the assignment of 30 weekly tasks and tickets ensuring customer success.
             ''')
-st.markdown('''
+st.write('''
         • **Developed an internal tool to optimize the processing of PDFs and trained new recruits**,
 enhancing the efficiency and accuracy of work performed by business operations.
          ''')
-st.markdown('''
-<style>
-[data-testid="stMarkdownContainer"] ul{
-    list-style-position: inside;
-}
-</style>
-''', unsafe_allow_html=True)
 
 st.write("**Math Tutor, - MathPro Learning Centre (Calgary, AB)** | February 2019 – November 2023")
 st.write('''
-         • **Educated and mentored over 50 students across different levels of school**, 
+        • **Educated and mentored over 50 students across different levels of school**, 
 significantly improving academic performance.
          ''')
 st.write('''
-         • **Collaborated with management in establishing an online tutoring module**, 
+        • **Collaborated with management in establishing an online tutoring module**, 
 supporting business operations during COVID.
-         ''', unsafe_allow_html=True)
+         ''')
 
 
 # Education Section
